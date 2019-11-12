@@ -1,0 +1,15 @@
+<h1>list of projects</h1>
+<table>
+	<tr>
+		<td>Name</td>
+		<td>Manager_id</td>
+	
+	</tr>
+	<% @projs.each do |j| %>
+	<tr>
+		<th><%= j.name %></th>
+		<th><%= j.manager_id %></th>
+		<th><%= j.manager.try(:name) %></th>
+	</tr>
+	<% end %>
+</table>

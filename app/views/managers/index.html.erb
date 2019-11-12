@@ -1,0 +1,15 @@
+<h1>List all managers</h1>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+	</tr>
+	<% @mangs.each do |f| %>
+	<tr>
+		<td><%= f.id %></td>
+		<td><%= f.name %></td>
+		<td><%= link_to "create project", new_manager_project_path(f)%></td>
+	</tr>
+	<% end %>
+	
+</table>

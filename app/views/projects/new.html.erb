@@ -1,0 +1,14 @@
+<h1>Create Project</h1>
+<%= form_for [@mang,@proj], url:  manager_projects_path do |k| %>
+ <p>
+ 	<%= k.label :Name %>
+ 	<%= k.text_field :name %> 
+ </p>   
+ <p>
+ 	<%= k.label :Manager_id %>
+ 	<%= k.text_field :manager_id %>
+ </p>
+<p>
+  <%= k.submit %>
+</p>
+ <% end %>
